@@ -19,21 +19,21 @@
     <script>
         var ExSearchConfig = {
             root: "",
-            api: "/11da74fcae65a81912086122977b73eb.json"
+            api: "/93757fc707c7062597625e77acf1f9af.json"
         }
     </script>
     
-<title>Wallpaper Engine的开源替代品：ScreenPlay - Maverick</title>
+<title>给Win32程序加图标 - Maverick</title>
 <meta name="author" content="Poly000" />
 <meta name="description" content="前言" />
-<meta property="og:title" content="Wallpaper Engine的开源替代品：ScreenPlay - Maverick" />
+<meta property="og:title" content="给Win32程序加图标 - Maverick" />
 <meta property="og:description" content="前言" />
 <meta property="og:site_name" content="Maverick" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/archives/overview/" />
 <meta property="og:image" content="" />
 <meta property="article:published_time" content="2020-09-29T22:08:00+08.00" />
-<meta name="twitter:title" content="Wallpaper Engine的开源替代品：ScreenPlay - Maverick" />
+<meta name="twitter:title" content="给Win32程序加图标 - Maverick" />
 <meta name="twitter:description" content="前言" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:image" content="" />
@@ -63,7 +63,7 @@
 <main>    
     <section class="ga-section ga-content">
         <article class="yue">
-            <h1 class="ga-post_title">Wallpaper Engine的开源替代品：ScreenPlay</h1>
+            <h1 class="ga-post_title">给Win32程序加图标</h1>
             <span class="ga-post_meta ga-mono">
                 <span>Poly000</span>
                 <time>
@@ -77,23 +77,35 @@
                 
                 <span class="leancloud_visitors" 
                     id="/archives/overview/" 
-                    data-flag-title="Wallpaper Engine的开源替代品：ScreenPlay"> · <i class="leancloud-visitors-count"></i> Views</span>
+                    data-flag-title="给Win32程序加图标"> · <i class="leancloud-visitors-count"></i> Views</span>
                 
             </span>
             <div class="ga-content_body">
                 <h2>前言</h2>
-<p>最近突然想找开源的linux上的WE替代品，</p><p>然而找到了 <em>Windows10</em> 下运行的的 <strong>ScreenPlay</strong> 。</p><p>感觉挺好的，于是贡献了zh-CN的翻译。</p><h2>安装</h2>
-<p>首先需要加入 <em><a href="https://discord.gg/3RygPHZ">Discord群组</a></em> 获取邀请码（至少目前是）。</p><p>然后到Steam激活产品 -&gt; 输入序列号。</p><p>（其中的bot因为 Power$hell 易死。）</p><p>界面预览图：</p><figure style="flex: 88.83248730964468" ><img loading="lazy" width="1400" height="788" src="/archives/assets/f78f501ef1d9764495df8984c129970d.png" /><figcaption>create</figcaption></figure><figure style="flex: 88.83248730964468" ><img loading="lazy" width="1400" height="788" src="/archives/assets/b1ef8a71fa1fa82dbfe8699a2e58d57f.png" /><figcaption>workshop</figcaption></figure><figure style="flex: 88.83248730964468" ><img loading="lazy" width="1400" height="788" src="/archives/assets/49014982ca8e4b7fb3655eafa1c0ef4d.png" /><figcaption>settings</figcaption></figure>
+<p>为了好玩咱想要试着给win32程序加图标，</p><p>但是只找到了用VS加图标的操作……</p><p>最后找到了链接操作。</p><p><a href="https://fragglet.livejournal.com/4448.html">原文地址（英文）</a></p><h2>开始动手做</h2>
+<p>首先 我们需要写一个 <code>.rc</code> 的文件：</p>
+<pre><code>1 ICON &quot;(path-to-*.ico)&quot;
+</code></pre>
+<p>然后，运行</p><div class="highlight"><pre><span></span>windres [file.rc] [file.o]
+</pre></div>
+<p>最后把 <code>.o</code> 链接进去！(这里是C程序)</p>
+<pre><code>gcc main.c [file.o]
+</code></pre>
+<p>大功告成！</p>
             </div>
         </article>
         <div id="ga-tags">
     
     <span class="ga-tag">
-        <a class="ga-highlight" href="/tag/Windows/">#Windows</a>
+        <a class="ga-highlight" href="/tag/Coding/">#Coding</a>
     </span>
     
     <span class="ga-tag">
-        <a class="ga-highlight" href="/tag/Wallpaper/">#Wallpaper</a>
+        <a class="ga-highlight" href="/tag/Development/">#Development</a>
+    </span>
+    
+    <span class="ga-tag">
+        <a class="ga-highlight" href="/tag/Windows/">#Windows</a>
     </span>
     
 </div>
@@ -103,7 +115,7 @@
 <section id="ga-content_pager">
 
     <div class="next">
-        <a class="ga-highlight" href="/archives/overview/">给Win32程序加图标</a>
+        <a class="ga-highlight" href="/archives/overview/">Wallpaper Engine的开源替代品：ScreenPlay</a>
         <p class="yue">前言</p>
     </div>
 

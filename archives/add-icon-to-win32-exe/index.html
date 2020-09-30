@@ -23,19 +23,20 @@
         }
     </script>
     
-<title>Tag: Windows - Maverick</title>
-<meta name="author" content="AlanDecode" />
-<meta name="description" content="This is Maverick, Theme Galileo." />
-<meta property="og:title" content="Tag: Windows - Maverick" />
-<meta property="og:description" content="This is Maverick, Theme Galileo." />
+<title>给Win32程序加图标 - Maverick</title>
+<meta name="author" content="Poly000" />
+<meta name="description" content="前言" />
+<meta property="og:title" content="给Win32程序加图标 - Maverick" />
+<meta property="og:description" content="前言" />
 <meta property="og:site_name" content="Maverick" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/tag/Windows/" />
-<meta property="og:image" content="Maverick" />
-<meta name="twitter:title" content="Tag: Windows - Maverick" />
-<meta name="twitter:description" content="This is Maverick, Theme Galileo." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/archives/add-icon-to-win32-exe/" />
+<meta property="og:image" content="" />
+<meta property="article:published_time" content="2020-09-29T22:08:00+08.00" />
+<meta name="twitter:title" content="给Win32程序加图标 - Maverick" />
+<meta name="twitter:description" content="前言" />
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:image" content="/android-chrome-512x512.png" />
+<meta name="twitter:image" content="" />
 
 
     
@@ -60,34 +61,82 @@
             <div class="wrapper">
                 
 <main>    
+    <section class="ga-section ga-content">
+        <article class="yue">
+            <h1 class="ga-post_title">给Win32程序加图标</h1>
+            <span class="ga-post_meta ga-mono">
+                <span>Poly000</span>
+                <time>
+                    2020-09-29
+                </time>
+                
+                in <a no-style class="category" href="/category/Windows/">
+                    Windows
+                </a>
+                
+                
+                <span class="leancloud_visitors" 
+                    id="/archives/add-icon-to-win32-exe/" 
+                    data-flag-title="给Win32程序加图标"> · <i class="leancloud-visitors-count"></i> Views</span>
+                
+            </span>
+            <div class="ga-content_body">
+                <h2>前言</h2>
+<p>为了好玩咱想要试着给win32程序加图标，</p><p>但是只找到了用VS加图标的操作……</p><p>最后找到了链接操作。</p><p><a href="https://fragglet.livejournal.com/4448.html">原文地址（英文）</a></p><h2>开始动手做</h2>
+<p>首先 我们需要写一个 <code>.rc</code> 的文件：</p>
+<pre><code>1 ICON &quot;(path-to-*.ico)&quot;
+</code></pre>
+<p>然后，运行</p><div class="highlight"><pre><span></span>windres [file.rc] [file.o]
+</pre></div>
+<p>最后把 <code>.o</code> 链接进去！(这里是C程序)</p>
+<pre><code>gcc main.c [file.o]
+</code></pre>
+<p>大功告成！</p>
+            </div>
+        </article>
+        <div id="ga-tags">
     
+    <span class="ga-tag">
+        <a class="ga-highlight" href="/tag/Coding/">#Coding</a>
+    </span>
+    
+    <span class="ga-tag">
+        <a class="ga-highlight" href="/tag/Development/">#Development</a>
+    </span>
+    
+    <span class="ga-tag">
+        <a class="ga-highlight" href="/tag/Windows/">#Windows</a>
+    </span>
+    
+</div>
+    </section>
 
-<section id="ga-archive_list" class="ga-section" data-title="#Windows">
-    <ul>
-        
-        <li>
-            <h1><a target="_self" class="ga-highlight" href="/archives/ScreenPlay/">Wallpaper Engine的开源替代品：ScreenPlay</a></h1>
-            <time class="ga-mono" datetime="2020-10-01T01:04:00+08.00">
-                2020-10-01
-            </time>
-        </li>
-        
-        <li>
-            <h1><a target="_self" class="ga-highlight" href="/archives/add-icon-to-win32-exe/">给Win32程序加图标</a></h1>
-            <time class="ga-mono" datetime="2020-09-29T22:08:00+08.00">
-                2020-09-29
-            </time>
-        </li>
-        
-    </ul>
+    
+<section id="ga-content_pager">
+
+    <div class="next">
+        <a class="ga-highlight" href="/archives/ScreenPlay/">Wallpaper Engine的开源替代品：ScreenPlay</a>
+        <p class="yue">前言</p>
+    </div>
+
+
+    <div class="prev">
+        <h3>No More</h3>
+        <p class="yue">This is the oldest one.</p>
+    </div>
+
 </section>
 
-<section class="ga-section ga-mono" id="ga-pager">
-    
-    <span>Page 1 of 1</span>
-    
-</section>
 
+    
+        <script>
+            var initValine = function () {
+                new Valine({"enable": true, "el": "#vcomments", "appId": "IKRAfuPq0zrz6Wfje8ahHAIP-gzGzoHsz", "appKey": "lFaCWkd4xCs0Ng5UWs1eHNwU", "visitor": true, "recordIP": true});
+            }
+        </script>
+        <script defer src='https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js' onload="initValine()"></script>
+        <div id="vcomments"></div>
+    
 
 </main>
 

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>poly000客栈</title><link>/</link><description>This is Maverick, Theme Galileo.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>/android-chrome-512x512.png</url><title>poly000客栈</title><link>/</link></image><language>chinese</language><lastBuildDate>Mon, 08 Feb 2021 04:45:25 +0806</lastBuildDate><pubDate>Mon, 08 Feb 2021 04:45:25 +0806</pubDate><item><title>给Win32程序加图标</title><link>/archives/add-icon-to-win32-exe/</link><description>&lt;h2&gt;前言&lt;/h2&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>poly000客栈</title><link>/</link><description>This is Maverick, Theme Galileo.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>/android-chrome-512x512.png</url><title>poly000客栈</title><link>/</link></image><language>chinese</language><lastBuildDate>Mon, 15 Feb 2021 19:57:47 +0806</lastBuildDate><pubDate>Mon, 15 Feb 2021 19:57:47 +0806</pubDate><item><title>给Win32程序加图标</title><link>/archives/add-icon-to-win32-exe/</link><description>&lt;h2&gt;前言&lt;/h2&gt;
 &lt;p&gt;为了好玩咱想要试着给win32程序加图标，&lt;/p&gt;&lt;p&gt;但是只找到了用VS加图标的操作……&lt;/p&gt;&lt;p&gt;最后找到了链接操作。&lt;/p&gt;&lt;p&gt;&lt;a href="https://fragglet.livejournal.com/4448.html"&gt;原文地址（英文）&lt;/a&gt;&lt;/p&gt;&lt;h2&gt;开始动手做&lt;/h2&gt;
 &lt;p&gt;首先 我们需要写一个 &lt;code&gt;.rc&lt;/code&gt; 的文件：&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;1 ICON &amp;quot;(path-to-*.ico)&amp;quot;
@@ -17,10 +17,11 @@
 &lt;p&gt;咱的wine一直跟随archlinux官方仓库最新版&lt;/p&gt;&lt;p&gt;这里内容可能很少，因为咱每次wine推gal出错并且解决了才会放到这里&lt;/p&gt;&lt;h2&gt;这里是正文&lt;/h2&gt;
 &lt;p&gt;咱在linux下推gal有时OP什么的经常出错……&lt;/p&gt;&lt;p&gt;于是准备整理这个博文，​收录各种错误信息解决方案。&lt;/p&gt;&lt;h3&gt;通用&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;MPEG splitter faild: 安装 quartz 后解决&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;MPEG splitter faild: 安装 devenum, quartz 后解决&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;其他OP播放崩溃：faudio（闪画面无声音），等等……（待添加）&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;打不开游戏: 一般安装DirectX相关依赖项即可解决&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;启动时弹了乱码报错，或者是游戏中乱码（比如 Clover Day’s中文汉化版，rewrite），可以在wine前加启动参数LANG=en_US.UTF-8，或LANG=zh_CN.UTF-8或LANG=ja_JP.UTF-8。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://appdb.winehq.org/"&gt;WineHQ-AppDB&lt;/a&gt; 通常会有一些人提供信息。&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;特定游戏&lt;/h3&gt;
 </description><author>hi@imalan.cn (Poly000)</author><guid isPermaLink="true">/archives/galgame-runs-on-linux/</guid><pubDate>Thu, 04 Feb 2021 00:04:00 +0806</pubDate></item></channel></rss>

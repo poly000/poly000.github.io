@@ -23,18 +23,18 @@
         }
     </script>
     
-<title>在wine下运行galgame常见问题解决方案 - poly000客栈</title>
+<title>WinDirStat——Windows下存储分析的优秀方案 - poly000客栈</title>
 <meta name="author" content="Poly000" />
-<meta name="description" content="说明" />
-<meta property="og:title" content="在wine下运行galgame常见问题解决方案 - poly000客栈" />
-<meta property="og:description" content="说明" />
+<meta name="description" content="引言" />
+<meta property="og:title" content="WinDirStat——Windows下存储分析的优秀方案 - poly000客栈" />
+<meta property="og:description" content="引言" />
 <meta property="og:site_name" content="poly000客栈" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/archives/galgame-runs-on-linux/" />
+<meta property="og:url" content="/archives/windirstat-recommend/" />
 <meta property="og:image" content="" />
 <meta property="article:published_time" content="2021-02-04T00:04:00+08.00" />
-<meta name="twitter:title" content="在wine下运行galgame常见问题解决方案 - poly000客栈" />
-<meta name="twitter:description" content="说明" />
+<meta name="twitter:title" content="WinDirStat——Windows下存储分析的优秀方案 - poly000客栈" />
+<meta name="twitter:description" content="引言" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:image" content="" />
 
@@ -63,51 +63,36 @@
 <main>    
     <section class="ga-section ga-content">
         <article class="yue">
-            <h1 class="ga-post_title">在wine下运行galgame常见问题解决方案</h1>
+            <h1 class="ga-post_title">WinDirStat——Windows下存储分析的优秀方案</h1>
             <span class="ga-post_meta ga-mono">
                 <span>Poly000</span>
                 <time>
                     2021-02-04
                 </time>
                 
-                in <a no-style class="category" href="/category/Galgame/">
-                    Galgame
+                in <a no-style class="category" href="/category/Windows/">
+                    Windows
                 </a>
                 
                 
                 <span class="leancloud_visitors" 
-                    id="/archives/galgame-runs-on-linux/" 
-                    data-flag-title="在wine下运行galgame常见问题解决方案"> · <i class="leancloud-visitors-count"></i> Views</span>
+                    id="/archives/windirstat-recommend/" 
+                    data-flag-title="WinDirStat——Windows下存储分析的优秀方案"> · <i class="leancloud-visitors-count"></i> Views</span>
                 
             </span>
             <div class="ga-content_body">
-                <h2>说明</h2>
-<p>咱的wine一直跟随archlinux官方仓库最新版</p><p>这里内容可能很少，因为咱每次wine推gal出错并且解决了才会放到这里</p><h2>这里是正文</h2>
-<p>咱在linux下推gal有时OP什么的经常出错……</p><p>于是准备整理这个博文，​收录各种错误信息解决方案。</p><h3>通用</h3>
-<ul>
-<li><p>MPEG splitter faild: 安装 devenum, quartz 后解决；quartz出问题的话可以执行 <code>winetricks --force quartz</code> 重装。</p></li>
-<li><p>万能方法： 在崩溃的地方存档，换win7虚拟机走过那段内容后存档。</p></li>
-<li><p>其他OP播放崩溃：faudio（闪画面无声音），等等……（待添加）</p></li>
-<li><p>打不开游戏: 一般安装DirectX相关依赖项即可解决</p></li>
-<li><p>启动时弹了乱码报错，或者是游戏中乱码（比如 Clover Day’s中文汉化版，rewrite），可以在wine前加启动参数LANG=en_US.UTF-8，或LANG=zh_CN.UTF-8或LANG=ja_JP.UTF-8。</p></li>
-<li><p><a href="https://appdb.winehq.org/">WineHQ-AppDB</a> 通常会有一些人提供信息。</p></li>
-</ul>
-<h3>特定游戏</h3>
-
+                <h2>引言</h2>
+<p>一个月前<span title="被学校领导命令">清理</span>C盘，</p><p>然后在 <a href="https://alternativeto.net">alternativeto.net</a> 找到了 <a href="https://alternativeto.net/software/filelight/?platform=windows">FileLight 在 Windows 上的替代品</a>，</p><p>最后选择了 <a href="https://windirstat.net/index.html">WinDirStat</a> 。</p><p>相较于 TreeSize 抽象的饼图和<span title="让人眼花">目害</span>的大小图，</p><p>WinDirStat 使用 __颜色__（对应文件类型），__矩形大小__（对应文件大小），直观地显示了空间使用分布。</p><p>附一张截图：</p><figure style="flex: 66.08391608391608" ><img loading="lazy" width="378" height="286" src="https://windirstat.net/images/windirstat.jpg" /><figcaption>screencut</figcaption></figure>
             </div>
         </article>
         <div id="ga-tags">
     
     <span class="ga-tag">
-        <a class="ga-highlight" href="/tag/Galgame/">#Galgame</a>
+        <a class="ga-highlight" href="/tag/Windows/">#Windows</a>
     </span>
     
     <span class="ga-tag">
-        <a class="ga-highlight" href="/tag/Wine/">#Wine</a>
-    </span>
-    
-    <span class="ga-tag">
-        <a class="ga-highlight" href="/tag/Linux/">#Linux</a>
+        <a class="ga-highlight" href="/tag/Storage_Analyse/">#Storage_Analyse</a>
     </span>
     
 </div>
@@ -117,14 +102,14 @@
 <section id="ga-content_pager">
 
     <div class="next">
-        <h3>No More</h3>
-        <p class="yue">This is the latest one.</p>
+        <a class="ga-highlight" href="/archives/vm-on-linux-use-gpu-passthough/">GPU直通教程汉化</a>
+        <p class="yue">原文链接</p>
     </div>
 
 
     <div class="prev">
-        <a class="ga-highlight" href="/archives/vm-on-linux-use-gpu-passthough/">GPU直通教程汉化</a>
-        <p class="yue">原文链接</p>
+        <a class="ga-highlight" href="/archives/ScreenPlay/">Wallpaper Engine的开源替代品：ScreenPlay</a>
+        <p class="yue">前言</p>
     </div>
 
 </section>
